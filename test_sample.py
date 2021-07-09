@@ -16,6 +16,6 @@ def test_url_with_trailing_slash():
     assert extract_data(url) == EXPECTED_RESULT
 
 
-# def test_url_with_trailing_slash_and_url_after_slash():
-#     url = 'https://github.com/yyx990803/vue-svelte-size-analysis/pulls/'
-#     assert extract_data(url) == EXPECTED_RESULT
+def test_url_with_trailing_slash_and_url_after_slash():
+    url = 'https://github.com/yyx990803/vue-svelte-size-analysis/pulls/'
+    assert extract_data(url) == EXPECTED_RESULT
